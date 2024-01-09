@@ -28,21 +28,21 @@ public class KadaiFirstController {
         return "実行結果：" + res;
     }
     //引き算
-    @GetMapping("/plus/{val1}/{val2}")
+    @GetMapping("/minus/{val1}/{val2}")
     public String calcMinus(@PathVariable int val1, @PathVariable int val2) {
         int res = 0;
         res = val1 - val2;
         return "実行結果：" + res;
     }
     //掛け算
-    @GetMapping("/plus/{val1}/{val2}")
+    @GetMapping("/times/{val1}/{val2}")
     public String calcTimes(@PathVariable int val1, @PathVariable int val2) {
         int res = 0;
         res = val1 * val2;
         return "実行結果：" + res;
     }
     //割り算
-    @GetMapping("/plus/{val1}/{val2}")
+    @GetMapping("/divide/{val1}/{val2}")
     public String calcDivide(@PathVariable int val1, @PathVariable int val2) {
         int res = 0;
         res = val1 / val2;
